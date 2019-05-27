@@ -11,6 +11,6 @@ class AuthenticationMiddleware implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return $handler->handle($request);
+        return $handler->handle($request)->hello();
     }
 }
