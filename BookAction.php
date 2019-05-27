@@ -36,7 +36,7 @@ class BookAction implements RequestHandlerInterface, EventManagerAwareInterface
     private function getBook()
     {
         $book = new Book();
-        $book->setId(1);
+        $book->setId(90);
         $book->setAuthor('AUthor Kong');
         $book->setTitle('James bund');
         $this->getEventManager()->trigger('getBook', $this, [
