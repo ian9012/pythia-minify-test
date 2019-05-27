@@ -10,6 +10,6 @@ class AnnouncementsReadHandlerFactory
 {
     public function __invoke(ContainerInterface $container) : AnnouncementsReadHandler
     {
-        return new AnnouncementsReadHandler();
+        return new AnnouncementsReadHandler('Something');
     }
 }
