@@ -1,0 +1,9 @@
+<?php $this->headTitle('All Movies'); ?>
+
+<ul>
+    <?php foreach ($movies as $movie){ ?>
+        <li><?php print $movie['title']; ?></li>
+    <?php } ?>
+</ul>
+
+<p><?php printf('Total movies: %d', count($movies)); ?></p>
