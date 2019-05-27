@@ -1,3 +1,3 @@
 composer unit-ssss-testx
-composer duitnow-test
+composer raya-test
 composer integration-test
