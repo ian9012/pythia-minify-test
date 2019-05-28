@@ -18,7 +18,7 @@ class BookActionFactory
         $bookAction = new BookAction($container->get(ResourceGenerator::class),
             $container->get(HalResponseFactory::class));
         $bookAction->setEventManager(new EventManager());
-        $listener = new LazyListener([
+        $listener = new LazyListener123([
             'listener' => LogListener::class,
             'method' => 'log'
         ], $container);
