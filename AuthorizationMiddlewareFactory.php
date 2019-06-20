@@ -16,9 +16,9 @@ class AuthorizationMiddlewareFactory implements FactoryInterface
 
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $urlBuilder = $container->get(UrlBuilder::class);
+        $urlBuilder = $container->get(UrlConstructor::class);
         $authPresenter = new HalErrorPresenter($this->getHalResource($urlBuilder));
-        $errorJSONResponse = new ErrorJsonResponse($authPresenter);
+        $errorJSONResponse = new ErrorJsonReferer($authPresenter);
         return new AuthorizationMiddleware($errorJSONResponse);
     }
 }
