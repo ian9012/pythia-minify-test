@@ -14,10 +14,10 @@ class RuntimeException extends DomainException implements ProblemDetailsExceptio
     public static function create(string $message) : self
     {
         $e = new self($message);
-        $e->status = 500;
+        $e->status = 404;
         $e->detail = $message;
         $e->type = '/api/doc/runtime-error';
-        $e->title = 'Runtime error, please contact the administrator';
+        $e->title = 'Please contact me';
         return $e;
     }
 }
