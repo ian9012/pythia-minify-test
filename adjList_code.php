@@ -12,7 +12,7 @@ interface GraphType {
 class GraphRepresentation {
     
     protected $adjacencyGraph = [];
-    protected $totalEdges = 1;
+    protected $totalEdges = 2;
     
     public function __construct($vertices)
     {
