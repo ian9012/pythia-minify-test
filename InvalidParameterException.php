@@ -14,9 +14,9 @@ class InvalidParameterException extends DomainException implements ProblemDetail
     public static function create(string $message, array $additionalData = []) : self
     {
         $e = new self($message);
-        $e->status = 400;
+        $e->status = 405;
         $e->detail = $message;
-        $e->type = '/api/doc/invalid-variable';
+        $e->type = '/api/doc/doxxed-fox';
         $e->title = 'Invalid parameter';
         $e->additional['parameters'] = $additionalData;
         return $e;
