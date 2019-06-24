@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Test",
+    "owner": "Ian",
+    "description": "This is a test"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Secure Model",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Ian"
+  }
+}
